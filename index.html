@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos Innovadores | UCIDES SAS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="dynamic-header">
+        <h1>Proyectos Innovadores</h1>
+        <p>Explora cómo transformamos ideas en realidades digitales</p>
+        <a href="#projects" class="cta-button">Ver Proyectos</a>
+    </header>
+
+    <main>
+        <section id="projects" class="projects-section">
+            <h2>Proyectos Destacados</h2>
+            <div class="project-gallery">
+                <div class="project-item" onclick="showProjectDetails('proyecto1')">
+                    <img src="https://via.placeholder.com/300" alt="Proyecto 1">
+                    <h3>Proyecto 1: Plataforma de E-commerce</h3>
+                    <p>Una tienda online interactiva y responsiva.</p>
+                </div>
+                <div class="project-item" onclick="showProjectDetails('proyecto2')">
+                    <img src="https://via.placeholder.com/300" alt="Proyecto 2">
+                    <h3>Proyecto 2: Blog Multimedia</h3>
+                    <p>Blog moderno para un influencer de viajes.</p>
+                </div>
+                <div class="project-item" onclick="showProjectDetails('proyecto3')">
+                    <img src="https://via.placeholder.com/300" alt="Proyecto 3">
+                    <h3>Proyecto 3: Portal Educativo</h3>
+                    <p>Plataforma educativa para cursos interactivos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-details" class="project-details hidden">
+            <h2 id="project-title"></h2>
+            <p id="project-description"></p>
+            <button onclick="closeProjectDetails()">Cerrar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 UCIDES SAS | Innovando el Futuro Digital</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
